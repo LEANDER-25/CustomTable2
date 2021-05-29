@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Item">
+    <children>
+        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="568.0">
+            <children>
+                <Label fx:id="lbID" alignment="CENTER" prefHeight="42.0" prefWidth="104.0" text="Label" />
+                <Label fx:id="lbBName" alignment="CENTER" prefHeight="42.0" prefWidth="230.0" text="Label" />
+                <Label fx:id="lbAName" alignment="CENTER" prefHeight="42.0" prefWidth="234.0" text="Label" />
+            </children>
+        </HBox>
+        <Button fx:id="btnSelect" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#itemDetail" onMouseExited="#mouseExit" prefHeight="30.0" prefWidth="568.0" />
+    </children>
+</StackPane>
+

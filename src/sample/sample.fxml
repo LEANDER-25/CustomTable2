@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <VBox fx:id="itemHolder" layoutX="15.0" layoutY="52.0" prefHeight="246.0" prefWidth="570.0" style="-fx-background-color: #1abc9c;" />
+        <HBox layoutX="15.0" layoutY="14.0" prefHeight="32.0" prefWidth="570.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="32.0" prefWidth="104.0" text="ID" />
+                <Label alignment="CENTER" prefHeight="32.0" prefWidth="230.0" text="Book's name" />
+                <Label alignment="CENTER" prefHeight="32.0" prefWidth="236.0" text="Author's name" />
+            </children>
+        </HBox>
+        <Button fx:id="btnDel" layoutX="15.0" layoutY="363.0" mnemonicParsing="false" onAction="#removeAll" prefHeight="26.0" prefWidth="570.0" text="Delete All" />
+      <Button fx:id="btnAdd" layoutX="15.0" layoutY="338.0" mnemonicParsing="false" onAction="#addNewItem" text="Add" />
+      <TextField fx:id="tfID" layoutX="54.0" layoutY="338.0" prefHeight="26.0" prefWidth="80.0" promptText="iD.." />
+      <TextField fx:id="tfBName" layoutX="134.0" layoutY="338.0" prefHeight="26.0" prefWidth="188.0" promptText="name" />
+      <TextField fx:id="tfAName" layoutX="402.0" layoutY="337.0" prefHeight="26.0" prefWidth="182.0" promptText="author name..." />
+      <TextField fx:id="tfAID" layoutX="322.0" layoutY="338.0" prefHeight="26.0" prefWidth="80.0" promptText="author id..." />
+    </children>
+</AnchorPane>
